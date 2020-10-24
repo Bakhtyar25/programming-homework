@@ -1,0 +1,30 @@
+import java.util.*;
+
+class homework
+{
+	public static void main(String[]args)
+	{
+		System.out.print("Please Enter Number Of Your Name Letters : ");
+		Scanner a=new Scanner(System.in);
+		int num=a.nextInt();
+
+		String [] letter=new String [num];
+
+			for (int t=0;t<num;t++)
+			{
+				System.out.print("Enter Letter["+t+"] : ");
+				Scanner b=new Scanner (System.in);
+				letter [t]=b.nextLine();
+			}
+
+		System.out.println("___________________________________________");
+
+				System.out.print("Your Name Is : ");
+
+				for(int h=0;h<num ;h++)
+				{
+					System.out.print(letter[h]);
+				}
+				System.out.println("");
+	}
+}
